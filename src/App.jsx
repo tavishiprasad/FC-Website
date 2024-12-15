@@ -1,23 +1,18 @@
 'use client'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import About from './components/About'
-import Services from './components/Services'
-import Events from './components/Events'
-import Testimonials from './components/Testimonials'
-import Contact from './components/Contact'
+import { BrowserRouter,Routes,Route } from 'react-router'
+import Home from './pages/Home'
+import Event from './pages/Event'
+import Team from './pages/Team'
 
 const App = () => {
   return (
-    <main>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Services/>
-      <Events/>
-      <Testimonials/>
-      <Contact/>
-    </main>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home/>} />
+        <Route path="/events" element={<Event/>} />
+        <Route path="/team" element={<Team/>} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 
