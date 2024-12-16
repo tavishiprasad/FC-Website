@@ -10,12 +10,12 @@ import bit from "../assets/events/adquest.jpg"
 
 export const LINKS = [
   { id: "/", name: "Home" },
-  { id: "#about", name: "About" },
-  { id: "#objectives", name: "Objectives" },
-  { id: "#events", name: "Events" }, 
-  { id: "#testimonials", name: "Testimonials" },
+  { id: "/#about", name: "About" },
+  { id: "/#objectives", name: "Objectives" },
+  { id: "/#events", name: "Events" }, 
+  { id: "/#testimonials", name: "Testimonials" },
   { id: "/team", name: "Team" },
-  { id: "#contact", name: "Contact" },
+  { id: "/#contact", name: "Contact" },
 ];
 
 export const ABOUT_US = {

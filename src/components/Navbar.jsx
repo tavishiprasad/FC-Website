@@ -1,11 +1,16 @@
 "use client";
-
+import { Link, Links } from "react-router";
 import { useState, useEffect } from "react";
 import { LINKS } from "../constants";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // const handleClick = (id) => {
+  //   console.log(id);
+  //   window.location.href = id;
+  // }
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -19,18 +24,21 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
+    // console.log("Hello");
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [isScrolled]);
 
   // Filter links based on the current page
   const filteredLinks = LINKS.filter(link => {
-    if (window.location.pathname === "/team") {
-      return link.id !== "#about" && link.id !== "#objectives" && link.id !== "#contact" && link.id !== "#testimonials";
-    } else if (window.location.pathname === "/events") {
-      return link.id !== "#about" && link.id !== "#contact" && link.id !== "#testimonials" && link.id !== "#objectives" ;
-    }
+    // if (window.location.pathname === "/team") {
+    //   // return link.id !== "#about" && link.id !== "#objectives" && link.id !== "#contact" && link.id !== "#testimonials";
+    //   return true;
+    // } else if (window.location.pathname === "/events") {
+    //   // return link.id !== "#about" && link.id !== "#contact" && link.id !== "#testimonials" && link.id !== "#objectives" ;
+    //   return true;
+    // }
     return true; // Default behavior for Home or other pages
   });
 
@@ -53,7 +61,8 @@ const Navbar = () => {
             {filteredLinks.map((item) => (
               <a
                 key={item.id}
-                href={`${item.id}`}
+                href={item.id}
+                // onClick={() => handleClick(item.id)}
                 className="py-4 px-2 text-gray-700 font-semibold hover:text-black transition duration-300"
               >
                 {item.name}
