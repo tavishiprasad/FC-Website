@@ -45,10 +45,7 @@ const Navbar = () => {
           <div className="flex space-x-7">
             <div>
               <a href="/" className="flex items-center py-4 px-2">
-                <img src="/fc.png" alt="Logo" className="h-8 w-auto mr-2" />
-                <span className="font-semibold text-gray-800 text-lg">
-                  Finance Club
-                </span>
+                <img src="/fc_2.png" alt="Logo" className="h-10 w-auto mr-2" />
               </a>
             </div>
           </div>

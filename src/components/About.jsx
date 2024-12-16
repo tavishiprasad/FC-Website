@@ -11,22 +11,18 @@ import { useRef } from 'react';
 
 const Features = [
   {
-    icon: '../assets/Vector4.png', // Ensure valid image path
     title: 'Financial Management Course',
     description: '30 hours non-credit based financial management course with finance software.',
   },
   {
-    icon: '../assets/Vector5.png', // Ensure valid image path
     title: 'Lectures / Seminars / Live Sessions',
     description: 'Lectures/Seminars/Live Sessions on GST, Taxes, Insurances, Investment Options.',
   },
   {
-    icon: '../assets/Vector6.png', // Ensure valid image path
     title: 'Teaching',
     description: 'Teaching on all types of important financial scopes.',
   },
   {
-    icon: '../assets/Vector6.png', // Ensure valid image path
     title: 'Competitive Events',
     description: 'Engaging competitions designed to enhance financial skills and practical knowledge.',
   },
@@ -116,14 +112,12 @@ const About = () => {
           {Features.map((feature, index) => (
             <div
               key={index}
-              className="flex flex-col gap-2 text-lg items-start rounded-xl bg-white p-8"
+              className="flex flex-col gap-2 text-lg items-start rounded-xl bg-white/90 backdrop-blur-md p-8"
             >
-              <img src={feature.icon} alt={feature.title} className="h-6 w-6" />
               <h3 className="font-bold">{feature.title}</h3>
               <p className="text-base">{feature.description}</p>
               <button className="bg-transparent text-base gap-2 text-black py-1 rounded-lg font-medium inline-flex items-center justify-center tracking-tight group transition-all duration-300 ease-in-out">
-                <span>Learn more</span>
-                <img src={arrowIcon} alt="Arrow Icon" className="h-5 w-5 transform transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+                
               </button>
             </div>
           ))}

@@ -133,7 +133,7 @@ const Testimonials = () => {
     <section className="p-16"  id='testimonials'>
       <div className="container" >
         <div className="section-heading">
-          <h2 className="section-title mt-5">What they say about us</h2>
+          <h2 className="section-title mt-5">Testimonials</h2>
           <p className="section-description mt-5">
           Providing financial knowledge and resources to help students excel in the financial world.
           </p>
@@ -144,12 +144,13 @@ const Testimonials = () => {
             testimonials={secondColumn}
             className="hidden md:block"
             duration={50}
+            
           />
-          <TestimonialsColumn
+          {/* <TestimonialsColumn
             testimonials={thirdColumn}
             className="hidden lg:block"
             duration={28}
-          />
+          /> */}
         </div>
       </div>
     </section>

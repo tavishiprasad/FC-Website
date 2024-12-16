@@ -4,9 +4,9 @@ import { CONTACT_DATA } from '../constants'; // Assuming this is imported from i
 const Contact = () => {
   return (
     <section className="container mx-auto p-16 bg-gradient-to-b from-fcbluelight to-fcblue " id="contact">
-      <h1 className="section-title">Contact Us</h1>
+      <h1 className="section-title mt-5">Contact Us</h1>
 
-      <div className="flex flex-wrap justify-around gap-8">
+      <div className="flex flex-wrap justify-around gap-8 mt-5">
         <div className="w-full sm:w-1/3 p-6 bg-white rounded-lg shadow-lg text-center">
           <h3 className="text-2xl text-gray-700 mb-4">Address</h3>
           <p className="text-gray-600">{CONTACT_DATA.address}</p>
