@@ -27,9 +27,9 @@ const Navbar = () => {
   // Filter links based on the current page
   const filteredLinks = LINKS.filter(link => {
     if (window.location.pathname === "/team") {
-      return link.id !== "#about" && link.id !== "#services" && link.id !== "#contact" && link.id !== "#testimonials";
+      return link.id !== "#about" && link.id !== "#objectives" && link.id !== "#contact" && link.id !== "#testimonials";
     } else if (window.location.pathname === "/events") {
-      return link.id !== "#about" && link.id !== "#contact" && link.id !== "#testimonials" && link.id !== "#services" ;
+      return link.id !== "#about" && link.id !== "#contact" && link.id !== "#testimonials" && link.id !== "#objectives" ;
     }
     return true; // Default behavior for Home or other pages
   });
