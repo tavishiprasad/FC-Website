@@ -1,37 +1,43 @@
-'use client';
+"use client";
 
-import React, { useRef } from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
-import bitcoin from '../assets/bitcoin.png';
-import piggy from '../assets/piggybank.png';
-import dollar from '../assets/dollar.png';
-import ArrowIcon from '../assets/arrow-right.svg';
+import { useRef } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import bitcoin from "../assets/bitcoin.png";
+import piggy from "../assets/piggybank.png";
+import dollar from "../assets/dollar.png";
+import ArrowIcon from "../assets/arrow-right.svg";
+import { Link } from "react-router";
 
 export default function Hero() {
   const heroRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: heroRef,
-    offset: ['start end', 'end start'],
+    offset: ["start end", "end start"],
   });
   const translateY = useTransform(scrollYProgress, [0, 1], [150, -150]);
 
   return (
     <section
       ref={heroRef}
-      className="h-screen pt-8 pb-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#7dc9fc,#e0f2fe_100%)] overflow-hidden flex items-center" id='home'
+      className="h-screen pt-8 pb-20 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#7dc9fc,#e0f2fe_100%)] overflow-hidden flex items-center"
+      id="home"
     >
       <div className="container mx-auto max-w-[90%] h-full flex items-center">
         <div className="md:flex items-center w-full">
           {/* Left Content */}
           <div className="md:w-[478px]">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tighter bg-gradient-to-b from-black to-fcbluedark text-transparent bg-clip-text mt-6">
-              Welcome to BIT Mesra's Finance Club
+              Welcome to BIT Mesra&apos;s Finance Club
             </h1>
             <p className="md:text-xl text-lg text-fcbluedark tracking-tight mt-6">
-              Unleash the financial tycoon within you. <br /> Learn, grow and excel in the world of finance.
+              Unleash the financial tycoon within you. <br /> Learn, grow and
+              excel in the world of finance.
             </p>
             <div className="flex gap-1 items-center mt-[30px]">
-              <button className="btn btn-primary">Join Us</button>
+              <Link to="/Login">
+                <button className="btn btn-primary">Join Us</button>
+              </Link>
+
               <a
                 href="#about"
                 className="btn btn-text gap-1 group transition-all duration-300 ease-in-out flex items-center"
@@ -57,9 +63,9 @@ export default function Hero() {
               }}
               transition={{
                 repeat: Infinity,
-                repeatType: 'mirror',
+                repeatType: "mirror",
                 duration: 4,
-                ease: 'easeInOut',
+                ease: "easeInOut",
               }}
             />
             <motion.img

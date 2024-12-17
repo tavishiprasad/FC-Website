@@ -31,7 +31,7 @@ const Navbar = () => {
   }, [isScrolled]);
 
   // Filter links based on the current page
-  const filteredLinks = LINKS.filter(link => {
+  const filteredLinks = LINKS.filter((link) => {
     // if (window.location.pathname === "/team") {
     //   // return link.id !== "#about" && link.id !== "#objectives" && link.id !== "#contact" && link.id !== "#testimonials";
     //   return true;
@@ -45,7 +45,9 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 ${
-        isScrolled ? "bg-transparent bg-opacity-10 backdrop-blur-md" : "bg-transparent"
+        isScrolled
+          ? "bg-transparent bg-opacity-10 backdrop-blur-md"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4">
@@ -70,12 +72,12 @@ const Navbar = () => {
             ))}
           </div>
           <div className="hidden lg:flex items-center">
-            <a
-              href="#join-us"
+            <Link
+              to="/Login"
               className="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition duration-300"
             >
               Join Us
-            </a>
+            </Link>
           </div>
           <div className="lg:hidden flex items-center">
             <button
@@ -115,13 +117,13 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <a
-              href="#join-us"
+            <Link
+              to="/Login"
               onClick={closeMenu}
               className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 hover:text-white"
             >
               Join Us
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
