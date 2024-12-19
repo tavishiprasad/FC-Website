@@ -7,74 +7,75 @@ import enigma from "../assets/events/enigma.jpeg";
 import tycoon from "../assets/events/tycoon.jpeg";
 import marketkshtera from "../assets/events/maket_kshetra.jpeg";
 import bit from "../assets/events/adquest.jpg";
-import avatar1 from '../assets/avatar-1.png';
-import avatar2 from '../assets/avatar-2.png';
-import avatar3 from '../assets/avatar-3.png';
-import avatar4 from '../assets/avatar-4.png';
-import avatar5 from '../assets/avatar-5.png';
-import avatar6 from '../assets/avatar-6.png';
-import avatar7 from '../assets/avatar-7.png';
-import avatar8 from '../assets/avatar-8.png';
-import avatar9 from '../assets/avatar-9.png';
+import dosa from '../assets/DOSA.jpg';
+import anand from '../assets/anand.jpg';
+import avatar3 from '../assets/Rishika.jpg';
+import avatar4 from '../assets/Shubham.jpeg';
+import avatar5 from '../assets/Shreyansh.jpg';
+import avatar6 from '../assets/Anupam.jpg';
+import avatar7 from '../assets/Lakshya.jpg';
+import avatar8 from '../assets/aalokpraveen.jpg';
+import avatar9 from '../assets/ansh.jpg';
 
 export const TESTIMONIALS = {
   items: [
     {
-      text: 'As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.',
-      imageSrc: avatar1,
-      name: 'Jamie Rivera',
-      username: '@jamietechguru00',
+      text: '"Finance Club- BIT Mesra” is a new student’s body society started in April 2021 for all UG and PG students not only in the BIT Mesra campus but also other off-campus BIT Mesra across the country. The main objective of this club is to acquaint the students with basic economic and financial concepts and terminology, handing over the required tools to cope with the complex financial world and manage their finances effectively.',
+      imageSrc: dosa,
+      name: 'Dr. Bhaskar Karn',
+      username: 'Founder',
     },
     {
-      text: "Our team's productivity has skyrocketed since we started using this tool.",
-      imageSrc: avatar2,
-      name: 'Josh Smith',
-      username: '@jjsmith',
+      text: '"Finance Club- BIT Mesra” aims to guide students on generating passive sources of income through their skills, holistic development, and making profitable investments with low risk. It focuses on inciting students to take up the challenging task of understanding the financial aspects of the world through workshops, quizzes, webinars, and hands-on training in financial analytics.',
+      imageSrc: anand,
+      name: 'Dr. Anand Prasad Sinha',
+      username: 'Faculty Advisor',
     },
     {
-      text: 'This app has completely transformed how I manage my projects and deadlines.',
+      text: 'Basking in the privilege and fulfilling the strenuous responsibility of the Vice President of one of the fastest-growing clubs in the history of BIT MESRA has been an enigmatic yet enjoyable journey. We have grown from a handful of finance aficionados to around 90 very talented BITians, inducted after a grilling recruitment process with a selection rate of less than 30%.',
       imageSrc: avatar3,
-      name: 'Morgan Lee',
-      username: '@morganleewhiz',
+      name: 'Rishika Kumari',
+      username: 'Vice President',
     },
     {
-      text: 'I was amazed at how quickly we were able to integrate this app into our workflow.',
+      text: 'Being a part of Finance Club BIT Mesra helped me grow in my academic and professional career. Whether it be projects at college or management at companies, Finance Club helped me think quantitatively and manage things effectively.',
       imageSrc: avatar4,
-      name: 'Casey Jordan',
-      username: '@caseyj',
+      name: 'Shubham Agarwal',
+      username: 'Joint President',
     },
     {
-      text: 'Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.',
+      text: 'If you are a finance enthusiast, this place is the best way to meet other like-minded people. In my opinion, this organization is an accurate mix of fun, knowledge, and finance. There’s an ocean of good events and webinars that can be a great source of information.',
       imageSrc: avatar5,
-      name: 'Taylor Kim',
-      username: '@taylorkimm',
+      name: 'Shreyansh',
+      username: 'Vice President',
     },
     {
-      text: 'The customizability and integration capabilities of this app are top-notch.',
+      text: 'As Vice President, I had the privilege of leading a high-performing team of 45 members at BIT Mesra. Through strategic planning and execution of events, we consistently exceeded our goals, fostering a culture of collaboration, innovation, and teamwork.',
       imageSrc: avatar6,
-      name: 'Riley Smith',
-      username: '@rileysmith1',
+      name: 'Anupam Nilav',
+      username: 'Vice President',
     },
     {
-      text: 'Adopting this app for our team has streamlined our project management and improved communication across the board.',
+      text: 'The finance club has allowed me to level my game professionally and personally. It has provided me invaluable experiences in team management, strategic planning, and networking with industry professionals, opening up numerous career opportunities.',
       imageSrc: avatar7,
-      name: 'Jordan Patels',
-      username: '@jpatelsdesign',
+      name: 'Lakshya Saini',
+      username: 'Joint President',
     },
     {
-      text: 'With this app, we can easily assign tasks, track progress, and manage documents all in one place.',
+      text: 'As the president of the Finance Club, it was my greatest honor to manage a team of 100+ members. The solidarity between every member of the association is something we are really proud of. Finance Club is a tremendous catalyst for students building strong finance knowledge.',
       imageSrc: avatar8,
-      name: 'Sam Dawson',
-      username: '@dawsontechtips',
+      name: 'Aalok Praveen',
+      username: 'President',
     },
     {
-      text: 'Its user-friendly interface and robust features support our diverse needs.',
+      text: 'Leading one of the fastest-growing clubs in BIT MESRA’s history has been both a privilege and a strenuous responsibility. This journey has been enigmatic yet immensely enjoyable. We provide unparalleled support to BITians through countless webinars, seminars, events, and talks.',
       imageSrc: avatar9,
-      name: 'Casey Harper',
-      username: '@casey09',
+      name: 'Ansh Raj',
+      username: 'Joint President',
     },
-  ]
+  ],
 };
+
 
 export const LINKS = [
   { id: "/", name: "Home" },

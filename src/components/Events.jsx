@@ -17,7 +17,7 @@ const Events = () => {
         {EVENTS.slice(0, visibleCount).map((event) => (  
           <div  
             key={event.id}  
-            className="block group cursor-pointer mb-4"  
+            className="block group cursor-pointer mb-4 h-min"  
           >  
             <div className="relative mb-4 overflow-hidden rounded-lg shadow-lg">  
               <img  

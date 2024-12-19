@@ -28,15 +28,14 @@ const TestimonialsColumn = ({ testimonials, duration, className }) => {
           <React.Fragment key={index}>
             {testimonials.map(({ text, imageSrc, name, username }) => (
               <div key={imageSrc} className="card my-5 bg-white shadow-md">
-                <div>{text}</div>
                 <div className="flex items-center gap-2 mt-5">
                   <img
                     src={imageSrc}
                     alt={name}
-                    width={40}
-                    height={40}
-                    className="h-10 w-10 rounded-full"
-                  />
+                    width={80}
+                    height={80}
+                    className="h-20 w-20 rounded-full mr-4"
+                    />
                   <div className="flex flex-col">
                     <div className="font-semibold tracking-tight leading-5">
                       {name}
@@ -44,6 +43,7 @@ const TestimonialsColumn = ({ testimonials, duration, className }) => {
                     <div className="leading-5 tracking-tight">{username}</div>
                   </div>
                 </div>
+                <div className='my-5'>{text}</div>
               </div>
             ))}
           </React.Fragment>
@@ -77,7 +77,7 @@ const Testimonials = () => {
           </p>
         </div>
         <div className="flex justify-center gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)] max-h-[738px] overflow-hidden">
-          <TestimonialsColumn testimonials={firstColumn} duration={25} className="block" />
+          <TestimonialsColumn testimonials={firstColumn} duration={35} className="block" />
           <TestimonialsColumn
             testimonials={secondColumn}
             className="hidden md:block"
