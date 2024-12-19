@@ -6,7 +6,75 @@ import houseoflegacy from "../assets/events/houseoflegacy.jpeg";
 import enigma from "../assets/events/enigma.jpeg";
 import tycoon from "../assets/events/tycoon.jpeg";
 import marketkshtera from "../assets/events/maket_kshetra.jpeg";
-import bit from "../assets/events/adquest.jpg"
+import bit from "../assets/events/adquest.jpg";
+import avatar1 from '../assets/avatar-1.png';
+import avatar2 from '../assets/avatar-2.png';
+import avatar3 from '../assets/avatar-3.png';
+import avatar4 from '../assets/avatar-4.png';
+import avatar5 from '../assets/avatar-5.png';
+import avatar6 from '../assets/avatar-6.png';
+import avatar7 from '../assets/avatar-7.png';
+import avatar8 from '../assets/avatar-8.png';
+import avatar9 from '../assets/avatar-9.png';
+
+export const TESTIMONIALS = {
+  items: [
+    {
+      text: 'As a seasoned designer always on the lookout for innovative tools, Framer.com instantly grabbed my attention.',
+      imageSrc: avatar1,
+      name: 'Jamie Rivera',
+      username: '@jamietechguru00',
+    },
+    {
+      text: "Our team's productivity has skyrocketed since we started using this tool.",
+      imageSrc: avatar2,
+      name: 'Josh Smith',
+      username: '@jjsmith',
+    },
+    {
+      text: 'This app has completely transformed how I manage my projects and deadlines.',
+      imageSrc: avatar3,
+      name: 'Morgan Lee',
+      username: '@morganleewhiz',
+    },
+    {
+      text: 'I was amazed at how quickly we were able to integrate this app into our workflow.',
+      imageSrc: avatar4,
+      name: 'Casey Jordan',
+      username: '@caseyj',
+    },
+    {
+      text: 'Planning and executing events has never been easier. This app helps me keep track of all the moving parts, ensuring nothing slips through the cracks.',
+      imageSrc: avatar5,
+      name: 'Taylor Kim',
+      username: '@taylorkimm',
+    },
+    {
+      text: 'The customizability and integration capabilities of this app are top-notch.',
+      imageSrc: avatar6,
+      name: 'Riley Smith',
+      username: '@rileysmith1',
+    },
+    {
+      text: 'Adopting this app for our team has streamlined our project management and improved communication across the board.',
+      imageSrc: avatar7,
+      name: 'Jordan Patels',
+      username: '@jpatelsdesign',
+    },
+    {
+      text: 'With this app, we can easily assign tasks, track progress, and manage documents all in one place.',
+      imageSrc: avatar8,
+      name: 'Sam Dawson',
+      username: '@dawsontechtips',
+    },
+    {
+      text: 'Its user-friendly interface and robust features support our diverse needs.',
+      imageSrc: avatar9,
+      name: 'Casey Harper',
+      username: '@casey09',
+    },
+  ]
+};
 
 export const LINKS = [
   { id: "/", name: "Home" },
@@ -30,8 +98,6 @@ export const ABOUT_US = {
     },
   ],
 };
-
-
 
 export const EVENTS = [
   {
@@ -75,32 +141,28 @@ export const EVENTS = [
     title: "Market Kshetra",
     description: "Hola Bitians, for some of us knowing finance only through webinars and workshops can be quite boring. To counter this, this time Finance Club BIT Mesra is going to organize 'Ad Quest' which is our new upcoming event which will be held from 1st June to 6th June in which not only your knowledge will be tested about finance but there will be a fun way of learning too.",
     imgSrc: marketkshtera,
-    },
+  },
   {
     id: 8,
     title: "Tycoon",
     description: "“Everyone can tell you the risk. An entrepreneur can see the reward.” Keeping in mind the plethora of creativity blooming in the youth, Finance Club BIT MESRA, in collaboration with Institute Innovation Council and EDC BIT MESRA brings you Business Plan Competition-2022. The participants are required to register by 17th August 2022. The competition requires the participants to showcase their ideas in the form of a presentation in Hybrid mode.",
     imgSrc: tycoon,
   },
-  
-    ];
-    export const CONTACT_DATA = {
-      address: "Finance Club, BIT Mesra, Ranchi",
-      callUsIcon: "&#9743;", // or any icon you prefer
-      formFields: [
-        { type: "text", placeholder: "Name" },
-        { type: "email", placeholder: "Email" },
-        { type: "text", placeholder: "Subject" },
-        { type: "textarea", placeholder: "Message", rows: 4 },
-      ],
-      socialLinks: [
-        { icon: "&#9993;", link: "#" },
-        { icon: "&#xf09b;", link: "#" },
-        { icon: "&#xf0e1;", link: "#" },
-        { icon: "&#xf16d;", link: "#" },
-      ],
-    };
+];
 
-export const Testimonials = () => {
-  return "testimonials";
+export const CONTACT_DATA = {
+  address: "Finance Club, BIT Mesra, Ranchi",
+  callUsIcon: "&#9743;", // or any icon you prefer
+  formFields: [
+    { type: "text", placeholder: "Name" },
+    { type: "email", placeholder: "Email" },
+    { type: "text", placeholder: "Subject" },
+    { type: "textarea", placeholder: "Message", rows: 4 },
+  ],
+  socialLinks: [
+    { icon: "&#9993;", link: "#" },
+    { icon: "&#xf09b;", link: "#" },
+    { icon: "&#xf0e1;", link: "#" },
+    { icon: "&#xf16d;", link: "#" },
+  ],
 };

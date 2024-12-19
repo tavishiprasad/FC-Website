@@ -3,7 +3,7 @@ import { CONTACT_DATA } from '../constants'; // Assuming this is imported from i
 
 const Contact = () => {
   return (
-    <section className="container mx-auto p-16 bg-gradient-to-b from-fcbluelight to-fcblue " id="contact">
+    <section className="container max-w-full p-16 bg-gradient-to-b from-fcbluelight to-fcblue " id="contact">
       <h1 className="section-title mt-5">Contact Us</h1>
 
       <div className="flex flex-wrap justify-around gap-8 mt-5">

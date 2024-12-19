@@ -1,16 +1,21 @@
 "use client";
-import { Link, Links } from "react-router";
+
 import { useState, useEffect } from "react";
-import { LINKS } from "../constants";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
-  // const handleClick = (id) => {
-  //   console.log(id);
-  //   window.location.href = id;
-  // }
+  const LINKS = [
+    { id: "/", name: "Home" },
+    { id: "/#about", name: "About" },
+    { id: "/#services", name: "Services" },
+    { id: "/#objectives", name: "Objectives" },
+    { id: "/#events", name: "Events" },
+    { id: "/#testimonials", name: "Testimonials" },
+    { id: "/team", name: "Team" },
+    { id: "/#contact", name: "Contact" },
+  ];
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -24,23 +29,10 @@ const Navbar = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
     };
-    // console.log("Hello");
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isScrolled]);
-
-  // Filter links based on the current page
-  const filteredLinks = LINKS.filter((link) => {
-    // if (window.location.pathname === "/team") {
-    //   // return link.id !== "#about" && link.id !== "#objectives" && link.id !== "#contact" && link.id !== "#testimonials";
-    //   return true;
-    // } else if (window.location.pathname === "/events") {
-    //   // return link.id !== "#about" && link.id !== "#contact" && link.id !== "#testimonials" && link.id !== "#objectives" ;
-    //   return true;
-    // }
-    return true; // Default behavior for Home or other pages
-  });
+  }, []);
 
   return (
     <nav
@@ -60,11 +52,10 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden lg:flex items-center space-x-1">
-            {filteredLinks.map((item) => (
+            {LINKS.map((item) => (
               <a
                 key={item.id}
                 href={item.id}
-                // onClick={() => handleClick(item.id)}
                 className="py-4 px-2 text-gray-700 font-semibold hover:text-black transition duration-300"
               >
                 {item.name}
@@ -72,12 +63,12 @@ const Navbar = () => {
             ))}
           </div>
           <div className="hidden lg:flex items-center">
-            <Link
-              to="/Login"
+            <a
+              href="/Login"
               className="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition duration-300"
             >
               Join Us
-            </Link>
+            </a>
           </div>
           <div className="lg:hidden flex items-center">
             <button
@@ -105,7 +96,7 @@ const Navbar = () => {
         } lg:hidden absolute top-16 left-0 w-full bg-white bg-opacity-10 backdrop-blur-lg shadow-lg z-50`}
       >
         <ul>
-          {filteredLinks.map((item) => (
+          {LINKS.map((item) => (
             <li key={item.id}>
               <a
                 href={`${item.id}`}
@@ -117,13 +108,13 @@ const Navbar = () => {
             </li>
           ))}
           <li>
-            <Link
-              to="/Login"
+            <a
+              href="/Login"
               onClick={closeMenu}
               className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 hover:text-white"
             >
               Join Us
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

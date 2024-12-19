@@ -42,7 +42,7 @@ const About = () => {
   return (
     <section
       ref={sectionRef}
-      className="bg-gradient-to-b from-white to-fcbluelight py-24 overflow-x-clip"
+      className="bg-gradient-to-b from-white to-fcbluelight pt-24 overflow-x-clip"
       id='about'
     >
       <div className="container mx-auto px-4 sm:px-8 z-10">
@@ -108,20 +108,20 @@ const About = () => {
           />
         </div>
 
-        <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 mt-0 mx-auto px-4 sm:px-8">
+        
+        {/* <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-4 sm:grid-cols-1 mt-0 mx-auto px-4 sm:px-8">
           {Features.map((feature, index) => (
-            <div
+            <motion.div
               key={index}
-              className="flex flex-col gap-2 text-lg items-start rounded-xl bg-white/90 backdrop-blur-md p-8"
+              className="flex flex-col gap-2 text-lg items-start rounded-xl bg-white/90 backdrop-blur-md p-8 shadow-lg"
+              whileHover={{ scale: 1.05 }} // Zoom effect
+              transition={{ type: 'spring', stiffness: 300 }}
             >
               <h3 className="font-bold">{feature.title}</h3>
               <p className="text-base">{feature.description}</p>
-              <button className="bg-transparent text-base gap-2 text-black py-1 rounded-lg font-medium inline-flex items-center justify-center tracking-tight group transition-all duration-300 ease-in-out">
-                
-              </button>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );
