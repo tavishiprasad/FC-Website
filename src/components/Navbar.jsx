@@ -11,7 +11,7 @@ const Navbar = () => {
     { id: "/#about", name: "About" },
     { id: "/#services", name: "Services" },
     { id: "/#objectives", name: "Objectives" },
-    { id: "/#events", name: "Events" }, 
+    { id: "/#events", name: "Events" },
     { id: "/#testimonials", name: "Testimonials" },
     { id: "/team", name: "Team" },
     { id: "/#contact", name: "Contact" },
@@ -32,12 +32,14 @@ const Navbar = () => {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isScrolled]);
+  }, []);
 
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 ${
-        isScrolled ? "bg-transparent bg-opacity-10 backdrop-blur-md" : "bg-transparent"
+        isScrolled
+          ? "bg-transparent bg-opacity-10 backdrop-blur-md"
+          : "bg-transparent"
       }`}
     >
       <div className="max-w-6xl mx-auto px-4">
@@ -62,7 +64,7 @@ const Navbar = () => {
           </div>
           <div className="hidden lg:flex items-center">
             <a
-              href="#join-us"
+              href="/Login"
               className="py-2 px-4 bg-green-500 text-white rounded hover:bg-green-600 transition duration-300"
             >
               Join Us
@@ -107,7 +109,7 @@ const Navbar = () => {
           ))}
           <li>
             <a
-              href="#join-us"
+              href="/Login"
               onClick={closeMenu}
               className="block text-sm px-2 py-4 hover:bg-green-500 transition duration-300 hover:text-white"
             >
