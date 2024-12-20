@@ -18,7 +18,7 @@ const TeamMembers = () => {
       <div className="max-w-7xl mx-auto">
         <h1 className="section-title mb-12">Our Team</h1>
 
-        <div className="flex flex-wrap justify-center gap-4 mb-14">
+        <div className="flex flex-wrap justify-center gap-4 mb-14 mx-8">
           {teamData.map((team, index) => (
             <button
               key={index}
